@@ -1,0 +1,49 @@
+// Download button functionality
+document.getElementById("downloadBtn").addEventListener("click", (e) => {
+  e.preventDefault()
+
+  // Replace this URL with your actual ISO download link
+  const isoUrl = "https://example.com/miku-os.iso"
+
+  // Show a notification to the user
+  alert("Download will begin shortly!\n\nNote: Replace the URL in script.js with your actual ISO download link.")
+
+  // Uncomment the line below when you have a real ISO URL
+  // window.location.href = isoUrl;
+})
+
+// Add smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault()
+    const target = document.querySelector(this.getAttribute("href"))
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+      })
+    }
+  })
+})
+
+// Add animation on scroll
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = "1"
+      entry.target.style.transform = "translateY(0)"
+    }
+  })
+}, observerOptions)
+
+// Observe all sections
+document.querySelectorAll(".defense-card, .step, .specs-section").forEach((el) => {
+  el.style.opacity = "0"
+  el.style.transform = "translateY(20px)"
+  el.style.transition = "opacity 0.6s ease, transform 0.6s ease"
+  observer.observe(el)
+})

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.I.K.U. - Mahou Iron-Wall Knight Unlimited</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5 L20 10 L30 5 L30 20 L20 30 L10 20 Z" fill="currentColor"/>
+                    <path d="M20 10 L25 15 L20 20 L15 15 Z" fill="#1a1f2e"/>
+                </svg>
+                <span class="logo-text">M.I.K.U.</span>
+            </div>
+            <h1 class="main-title">MAHOU IRON-WALL KNIGHT<br>UNLIMITED</h1>
+            <p class="subtitle">Secure Operating System</p>
+        </header>
+
+        <!-- Miku OS Section -->
+        <section class="miku-os-section">
+            <div class="miku-branding">
+                <h2 class="miku-title">MIKU OS</h2>
+            </div>
+
+            <div class="download-section">
+                <a href="#" class="download-btn" id="downloadBtn">
+                    <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download ISO
+                </a>
+            </div>
+
+            <!-- Installation Instructions -->
+            <div class="instructions">
+                <h3 class="instructions-title">Installation Instructions</h3>
+                <div class="instruction-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h4>Download the ISO</h4>
+                            <p>Click the download button above to get the Miku OS ISO file</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h4>Create Live Boot USB</h4>
+                            <p>Use tools like Rufus (Windows) or dd command (Linux) to create a bootable USB drive</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <h4>Boot from USB</h4>
+                            <p>Restart your computer and boot from the USB drive (usually F12 or DEL key)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <h4>Run Installation</h4>
+                            <p>Once booted into live environment, open terminal and run:</p>
+                            <code class="command">sudo eggs krill</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Defenses -->
+        <section class="defenses-section">
+            <h2 class="section-title">CORE DEFENSES</h2>
+            <div class="defenses-grid">
+                <div class="defense-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span>DNS & Network Lock</span>
+                </div>
+                <div class="defense-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span>Full Disk Encryption</span>
+                </div>
+                <div class="defense-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                    </svg>
+                    <span>Key Only SSH</span>
+                </div>
+                <div class="defense-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <span>AppArmor & Integrity Sandbox</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Specs -->
+        <section class="specs-section">
+            <div class="specs-content">
+                <h2 class="section-title">SYSTEM SPECS</h2>
+                <ul class="specs-list">
+                    <li>Debian 12 Minimal Base</li>
+                    <li>Lynis Hardening Score: 80+</li>
+                    <li>Root Disabled & USB Ports Neutralized</li>
+                    <li>Fail2Ban & Firewall Protection</li>
+                    <li>AIDE File Integrity Checker</li>
+                    <li>Automated Security Monitoring</li>
+                </ul>
+            </div>
+            <div class="specs-visual">
+                <div class="security-illustration">
+                    <svg class="shield-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 5 L85 20 L85 50 C85 70 50 95 50 95 C50 95 15 70 15 50 L15 20 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="50" cy="45" r="12" fill="currentColor"/>
+                        <rect x="45" y="55" width="10" height="15" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>+92-346-3978797</span>
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span>www.reallygretsite.com</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
