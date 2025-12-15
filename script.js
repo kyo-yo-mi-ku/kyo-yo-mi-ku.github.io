@@ -3,13 +3,10 @@ document.getElementById("downloadBtn").addEventListener("click", (e) => {
   e.preventDefault()
 
   // Replace this URL with your actual ISO download link
-  const isoUrl = "https://example.com/miku-os.iso"
-
-  // Show a notification to the user
-  alert("Download will begin shortly!\n\nNote: Replace the URL in script.js with your actual ISO download link.")
+  const isoUrl = "https://drive.google.com/file/d/1TpgZHnAFD9fLcLhNriDiV6N4OfBUYSy7/view?usp=sharing"
 
   // Uncomment the line below when you have a real ISO URL
-  // window.location.href = isoUrl;
+  window.location.href = isoUrl;
 })
 
 // Add smooth scrolling
