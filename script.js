@@ -2,10 +2,10 @@
 document.getElementById("downloadBtn").addEventListener("click", (e) => {
   e.preventDefault()
 
-  // Replace this URL with your actual ISO download link
+  // Url to the drive file containing the iso
   const isoUrl = "https://drive.google.com/file/d/1TpgZHnAFD9fLcLhNriDiV6N4OfBUYSy7/view?usp=sharing"
 
-  // Uncomment the line below when you have a real ISO URL
+  // To change the url of the window to the drive file
   window.location.href = isoUrl;
 })
 
